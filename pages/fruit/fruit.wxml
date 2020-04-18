@@ -1,0 +1,35 @@
+<view class="content" wx:if="{{flag}}">
+	<image src="{{url}}" mode="widthFix" catchtap="onViewImage"  data-src="{{url}}"></image>
+	<view class="detail">
+		<view class="top">
+			<view class="hor-before"></view>
+			<text>识别结果</text>
+      <view class="hor"></view>
+		</view>
+    <view class="type">
+      <text>果蔬</text>
+      <text>置信度</text>
+    </view>
+    <view class="comfor" wx:for="{{plantList}}">
+      <text class="name">{{item.name}}</text>
+      <view class="timer" style="width:{{item.score*200}}rpx"></view>
+      <text class="score">{{item.score}}</text>
+    </view>
+    <view class="caipu">
+			<view class="title-top">
+				<text>菜谱</text>
+				<image src="{{show == true ? up : down}}" catchtap="onVisibility"></image>
+			</view>
+			<view class="detail-bottom" wx:if="{{show}}">
+				<text>菜品名称: {{content[0].cp_name}}</text>
+				<text>类型: {{content[0].type_name}}</text>
+				<text>做法: {{content[0].zuofa}}</text>
+				<text>特性: {{content[0].texing}}</text>
+				<text>提示: {{content[0].tishi}}</text>
+				<text>调料: {{content[0].tiaoliao}}</text>
+				<text>原料:	{{content[0].yuanliao}}</text>
+			</view>
+		</view>
+	</view>
+</view>
+<button class="selBtn" catchtap="clickSel">果蔬图片</button>

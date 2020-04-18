@@ -1,0 +1,31 @@
+<view class="tip" wx:if="{{tipFlag}}">
+	<text>颜</text>
+	<text>值</text>
+	<text>即</text>
+	<text>正</text>
+	<text>义</text>
+</view>
+<view class="box">
+	<view class="img">
+		<image src="{{url}}" mode="widthFix"  wx:if="{{flag}}"></image>
+		<view class="i" wx:for="{{face_list.landmark72}}" style="left:{{item.x*num}}px;top:{{item.y*num}}px;" wx:if="{{markFlag}}"></view>
+		<!-- <view class="location" style="left:{{face_list.location.left*num}}px;top:{{face_list.location.top*num}}px;width:{{face_list.location.width*num}}px;height:{{face_list.location.height*num}}px;transform:rotate({{face_list.location.rotation}}deg);">
+		</view> -->
+	</view>
+  <view class="content" wx:if="{{flag}}">
+	<text>性别: {{face_list.gender.type == "male" ? "男性" :face_list.gender.type == "female" ? "女性" : ""}}</text>
+	<text>年龄: {{face_list.age}}</text>
+	<text>种族: {{face_list.race.type == "white" ? "白种人" :face_list.race.type == "yellow" ? "黄种人" : face_list.race.type == "black" ? "黑种人" : ""}}</text>
+	<text>颜值: {{face_list.beauty}}</text>
+	<text>表情: {{face_list.expression.type == "none" ? "不笑" : face_list.expression.type == "smile" ? "微笑" : face_list.expression.type == "laugh" ? "大笑" : ""}}</text>
+	<text>情绪: {{face_list.emotion.type == "angry" ? "愤怒" : face_list.emotion.type == "disgust" ? "厌恶 " : face_list.emotion.type == "fear" ? "恐惧" : face_list.emotion.type == "happy" ? "开心" : face_list.emotion.type == "sad" ? "伤心" : face_list.emotion.type == "surprise" ? "惊讶" : face_list.emotion.type == "neutral" ? "无表情" : face_list.emotion.type == "pouty" ? "撅嘴" : face_list.emotion.type == "grimace" ? "鬼脸" : ""}}</text>
+	<text>脸型: {{face_list.face_shape.type == "square" ? "正方形" : face_list.face_shape.type == "triangle" ? "三角形" : face_list.face_shape.type == "oval" ? "椭圆形" : face_list.face_shape.type == "heart" ? "心形" : face_list.face_shape.type == "round" ? "圆形" : ""}}</text>
+	<text>眼镜: {{face_list.glasses.type == "none" ? "无眼镜" : face_list.glasses.type == "common" ? "普通眼镜" : face_list.glasses.type == "sun" ? "墨镜" : ""}}</text>
+	<text>口罩: {{face_list.mask.type == "0" ? "无" :face_list.mask.type == "1" ? "有" : ""}}</text>
+	<text>类别: {{face_list.face_type.type == "human" ? "真实人脸" : face_list.face_type.type == "cartoon" ? "卡通人脸" : ""}}</text>
+</view>
+</view>
+<button class="markBtn" catchtap="onMark" wx:if="{{flag}}">特征点</button>
+<button  class= "selBtn" catchtap="click">
+	选择照片
+</button>

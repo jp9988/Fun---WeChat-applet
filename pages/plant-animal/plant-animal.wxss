@@ -1,0 +1,60 @@
+page {
+  width: 100%;
+  height: 100%;
+  /* background: url('https://i.niupic.com/images/2020/04/17/7rrE.jpg') no-repeat 0 0; */
+  background-size: 100% auto;
+}
+
+.body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.body>image {
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+}
+
+.title {
+  margin: auto;
+  color: #fff;
+  z-index: 1;
+}
+
+.title>text {
+  font-size: 80rpx;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-style: italic;
+}
+
+.sel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  position: absolute;
+  bottom: 5%;
+}
+
+.plant {
+  width: 230rpx;
+  background-color: skyblue;
+  border-radius: 20rpx;
+  font-size: 50rpx;
+  text-align: center;
+  color: #fff;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.animal {
+  width: 230rpx;
+  background-color: skyblue;
+  border-radius: 20rpx;
+  font-size: 50rpx;
+  text-align: center;
+  color: #fff;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}

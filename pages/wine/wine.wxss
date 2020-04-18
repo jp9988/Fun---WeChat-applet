@@ -1,0 +1,15 @@
+/* pages/wine/wine.wxss */
+@import "../plant-template/plant-template.wxss";
+.img{
+  width: 100%;
+}
+
+.type{
+  display: flex;
+  flex-direction: column;
+}
+
+.type>text{
+  padding-bottom: 20rpx;
+  text-align: justify;
+}

@@ -1,0 +1,34 @@
+/* pages/dish-fruit/dish-fruit.wxss */
+page {
+  /* background: url('https://i.niupic.com/images/2020/04/17/7r8q.jpg') no-repeat 0 0;
+  background-size: 100% auto; */
+}
+
+image{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: absolute;
+  top: 900rpx;
+  justify-content: space-around;
+  z-index: 1;
+}
+
+.bottom>view {
+  background-color: rgb(213, 213, 213, 0.7);
+  height: 100rpx;
+  line-height: 100rpx;
+  width: 250rpx;
+  color: rgb(252, 251, 251);
+  border-radius: 20rpx;
+  text-align: center;
+  font-size: 40rpx;
+}

@@ -1,0 +1,8 @@
+/**app.wxss**/
+.selBtn {
+  position: fixed;
+  bottom: 5%;
+  right: 0;
+  left: 0;
+  margin: auto;
+}

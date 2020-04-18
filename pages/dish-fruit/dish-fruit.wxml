@@ -1,0 +1,6 @@
+<image src="../../images/dish-logo.jpg" mode="widthFix"></image>
+<view class="bottom">
+  <view catchtap="onDish">菜品识别</view>
+  <view catchtap="onFruit">果蔬识别</view>
+</view>
+

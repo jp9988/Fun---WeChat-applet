@@ -1,0 +1,50 @@
+/* pages/address/address.wxss */
+.top {
+  display: flex;
+  flex-direction: column;
+}
+
+.top>image {
+  width: 100%;
+}
+
+.name {
+  text-align: center;
+  margin-top: 20rpx;
+}
+
+.jianjie {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1rpx solid #fff;
+  background-color: #0073eb;
+  margin: 20rpx 20rpx 200rpx 20rpx;
+  box-sizing: box;
+  border-radius: 30rpx;
+  color: #fff;
+  padding: 20rpx;
+}
+
+.title-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20rpx;
+}
+
+.title-top>image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.detail-bottom {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.detail-bottom>text {
+  padding-bottom: 20rpx;
+}

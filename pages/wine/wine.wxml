@@ -1,0 +1,26 @@
+<view wx:if="{{flag}}">
+  <image src="{{uri}}" mode="widthFix" class="img"></image>
+</view>
+<view class="content" wx:if="{{!flag}}">
+	<image src="{{url}}" mode="widthFix" catchtap="onViewImage"  data-src="{{url}}"></image>
+	<view class="detail">
+		<view class="top">
+			<view class="hor-before"></view>
+			<text>识别结果</text>
+      <view class="hor"></view>
+		</view>
+    <view class="type">
+      <text>名称: {{detail.wineNameCn}}</text>
+      <text>国家: {{detail.countryCn}} {{detail.countryEn}}</text>
+      <text>产区: {{detail.regionCn}} {{detail.regionEn}}</text>
+      <text>酒庄: {{detail.wineryCn}} {{detail.wineryEn}}</text>
+      <text>酒类型: {{detail.classifyByColor}}</text>
+      <text>糖分类型: {{detail.classifyBySugar}}</text>
+      <text>色泽: {{detail.color}}</text>
+      <text>葡萄品种: {{detail.grapeCn}}</text>
+      <text>品尝温度: {{detail.tasteTemperature}}</text>
+      <text>酒品描述: {{detail.description}}</text>
+    </view>
+	</view>
+</view>
+<button class="selBtn" catchtap="clickSel">红酒标签</button>

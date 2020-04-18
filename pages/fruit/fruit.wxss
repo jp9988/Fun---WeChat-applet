@@ -1,0 +1,6 @@
+/* pages/fruit/fruit.wxss */
+@import "../plant-template/plant-template.wxss";
+
+.title-top{
+  padding-top: 20rpx;
+}

@@ -1,0 +1,6 @@
+@import "../plant-template/plant-template.wxss";
+
+.score {
+  position: absolute;
+  left: 330rpx;
+}

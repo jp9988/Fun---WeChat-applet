@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/plant/plant",
+    "pages/plant-animal/plant-animal",
+    "pages/animal/animal",
+    "pages/dish-fruit/dish-fruit",
+    "pages/dish/dish",
+    "pages/fruit/fruit",
+    "pages/address/address",
+    "pages/wine/wine"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "人脸识别",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "人脸识别",
+        "iconPath": "/images/face.png",
+        "selectedIconPath": "/images/face-sel.png"
+      },
+      {
+        "pagePath": "pages/plant-animal/plant-animal",
+        "text": "动植物识别",
+        "iconPath": "/images/tree.png",
+        "selectedIconPath": "/images/tree-sel.png"
+      },
+      {
+        "pagePath": "pages/dish-fruit/dish-fruit",
+        "text": "美食识别",
+        "iconPath": "/images/dish.png",
+        "selectedIconPath": "/images/dish-sel.png"
+      },
+      {
+        "pagePath": "pages/wine/wine",
+        "text": "红酒识别",
+        "iconPath": "/images/wine.png",
+        "selectedIconPath": "/images/wine-sel.png"
+      },
+      {
+        "pagePath": "pages/address/address",
+        "text": "地标识别",
+        "iconPath": "/images/address.png",
+        "selectedIconPath": "/images/address-sel.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

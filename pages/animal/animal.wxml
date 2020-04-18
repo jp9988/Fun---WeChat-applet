@@ -1,0 +1,8 @@
+<import src="../plant-template/plant-template.wxml" />
+<view class="start" wx:if="{{flag}}">
+	<image src="/images/animal-logo.png" mode="widthFix"></image>
+</view>
+<view class="content" wx:if="{{!flag}}">
+	<template is="plant-template" data="{{plantList}}"></template>
+</view>
+<button class="selBtn" catchtap="clickSel">选择图片</button>

@@ -1,0 +1,18 @@
+<view class="top">
+  <image src="{{url}}" mode="widthFix"></image>
+  <view class="name">
+    <text>地标: {{address}}</text>
+  </view>
+  <view class="jianjie">
+			<view class="title-top">
+				<text>地标简介(国内)</text>
+				<image src="{{show == true ? up : down}}" catchtap="onVisibility"></image>
+			</view>
+			<view class="detail-bottom" wx:if="{{show}}">
+				<text>地标名称: {{detail.name}}</text>
+				<text decode="true">简介: {{detail.content}}</text>
+				<text>位置: {{detail.province}} · {{detail.city}}</text>
+			</view>
+		</view>
+</view>
+<button class="selBtn" catchtap="clickSel">地标图片</button>

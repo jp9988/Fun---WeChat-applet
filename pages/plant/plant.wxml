@@ -1,0 +1,35 @@
+<!-- <view class="start" wx:if="{{flag}}">
+	<image src="/images/tree-logo.png" mode="widthFix"></image>
+</view>
+<view class="content" wx:if="{{!flag}}">
+	<image src="{{url}}" mode="widthFix" catchtap="onViewImage"  data-src="{{url}}"></image>
+	<view class="detail">
+		<view class="top">
+			<view class="hor-before"></view>
+			<text>识别结果</text>
+      <view class="hor"></view>
+		</view>
+    <view class="type">
+      <text>植物</text>
+      <text>置信度</text>
+    </view>
+    <view class="comfor" wx:for="{{plantList}}">
+      <text class="name">{{item.name}}</text>
+      <view class="timer" style="width:{{item.score*200}}rpx"></view>
+      <text class="score">{{item.score}}</text>
+    </view>
+    <view class="describe">
+      <text>植物描述: {{plantList[0].baike_info[0].baike_info.description}}
+    </text>
+    </view>
+	</view>
+</view>
+<button class="selBtn" catchtap="clickSel">选择图片</button> -->
+<import src="../plant-template/plant-template.wxml" />
+<view class="start" wx:if="{{flag}}">
+	<image src="/images/tree-logo.png" mode="widthFix"></image>
+</view>
+<view class="content" wx:if="{{!flag}}">
+	<template is="plant-template" data="{{plantList}}"></template>
+</view>
+<button class="selBtn" catchtap="clickSel">选择图片</button>

@@ -1,0 +1,124 @@
+/* pages/mine/mine.wxss */
+page {
+  width: 100%;
+  height: 100%;
+}
+
+.start {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.start>image {
+  width: 150rpx;
+  height: 150rpx;
+  margin: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 200rpx;
+}
+
+.content>image {
+  width: 100%;
+  height: 500rpx;
+}
+
+.detail {
+  height: 100%;
+  border: 1rpx solid #fff;
+  background-color: #0073eb;
+  margin: 20rpx;
+  box-sizing: box;
+  border-radius: 30rpx;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx;
+  align-items: center;
+}
+
+.hor-before {
+  width: 240rpx;
+  height: 5rpx;
+  background-color: #fff;
+}
+
+.top>text {
+  letter-spacing: 10rpx;
+  margin-left: 10rpx;
+  margin-right: 5rpx;
+}
+
+.hor {
+  width: 247rpx;
+  height: 5rpx;
+  background-color: #fff;
+}
+
+text {
+  color: #fff;
+}
+
+.type {
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.comfor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding:20rpx 20rpx 0 20rpx;
+  align-items: center;
+}
+
+.timer {
+  width: 200rpx;
+  height: 8rpx;
+  background-color: #fff;
+  position: absolute;
+  right: 160rpx;
+}
+
+.describe {
+  padding: 20rpx;
+  text-align: justify;
+}
+
+.caipu {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20rpx 20rpx 20rpx;
+}
+
+.title-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20rpx;
+}
+
+.title-top>image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.detail-bottom {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.detail-bottom>text{
+  padding-bottom: 20rpx;
+}
